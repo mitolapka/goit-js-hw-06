@@ -3,13 +3,13 @@ form.addEventListener('submit', handlerSubmit)
 function handlerSubmit(evt) {
     evt.preventDefault();
     const { email, password } = evt.currentTarget.elements;
-    if (email === '' || password === '') {
+    if (email.value === '' || password.value === '') {
         alert('Please fill in all fields');
         return;
     }
     const data = { 
-        mail: email.value,
-        pass: password.value
+        Email: email.value,
+        Password: password.value
     };
     
     console.log(data);
