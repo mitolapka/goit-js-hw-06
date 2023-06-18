@@ -12,6 +12,6 @@ ingredients.forEach((ingredient) => {
   const heading = document.createElement("li");
   heading.textContent = ingredient;
   heading.classList.add('item');
-  list.append(heading);
+  elements.push(heading);
 })
- list.append(elements);
+ list.append(...elements);

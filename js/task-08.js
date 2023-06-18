@@ -8,8 +8,8 @@ function handlerSubmit(evt) {
         return;
     }
     const data = { 
-        Email: email.value,
-        Password: password.value
+        email: email.value,
+        password: password.value
     };
     
     console.log(data);
